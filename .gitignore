@@ -1,0 +1,4 @@
+#Adding ignore of DS_Store.
+
+.DS_Store
+
