@@ -17,7 +17,7 @@ function buildMetadata(sampleId) {
     Object.entries(metaData).forEach(([key,value]) => {
       panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
-  });
+  }).catch(function (error) {console.log('Error when loading the data.', error)}); // error handelling
 }
 
 buildMetadata(940);
